@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="warmup4-17.css">
+    <title>Document</title>
+    <head>
+<body>
+ <div class="shape-shifter"></div>
+ <style>
+.shape-shifter {
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+  transition: all 1s ease-in-out; /* Animates the shape change */
+  
+  /* Start as a Triangle */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Step 2: Transform to a Solid Box on Hover */
+.shape-shifter:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 50%; /* Ensures square corners */
+}
+
+/* Step 3: Transform to a Circle using a class or second state */
+/* Note: Transitioning from polygon to circle directly can be abrupt. 
+   Using border-radius on a square is the standard way to make a circle. */
+.shape-shifter.circle {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); 
+  border-radius: 100%; /* Rounds the square into a circle */
+}
+
+</style>
+
+
+
+
+<html>
+</body>
+
+    

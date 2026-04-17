@@ -1,0 +1,24 @@
+.shape-shifter {
+  width: 200px;
+  height: 200px;
+  background-color: royalblue;
+  transition: all 1s ease-in-out; /* Animates the shape change */
+  
+  /* Start as a Triangle */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Step 2: Transform to a Solid Box on Hover */
+.shape-shifter:hover {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  border-radius: 100; /* Ensures square corners */
+}
+
+/* Step 3: Transform to a Circle using a class or second state */
+/* Note: Transitioning from polygon to circle directly can be abrupt. 
+   Using border-radius on a square is the standard way to make a circle. */
+.shape-shifter.circle-state {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Maintain box base */
+  border-radius: 100%; /* Rounds the square into a circle */
+}
+

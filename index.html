@@ -2,57 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Example: Link for Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Login Page</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; }
+        .login-box { border: 1px solid #ccc; padding: 20px; border-radius: 8px; width: 300px; }
+        input { width: 100%; padding: 8px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background-color: #2da44e; color: white; border: none; border-radius: 6px; cursor: pointer; }
+    </style>
 </head>
 <body>
-
-    <!-- Header / Navbar -->
-    <header>
-        <div class="logo">MyPortfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <h1>Hi, I'm James Coughlin</h1>
-        <p>A Web Developer / Designer</p>
-        <a href="#projects" class="btn">View My Work</a>
-        </div class="gallery-item">
-<a target="_blank" href="img_eevee.jpg">
-    <img src="img_eevee.jpg" alt="eevee pokemon" width="600" height="400"> 
-     </a>
-<div class="desc">A Eevee pokemon is from anime tv series</div>
-<div>
-    This is type of Pokemon called Eveee from Unit V project in Github.
-</div>
-
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">Project 1</div>
-            <div class="project-card">Project 2</div>
-            <div class="project-card">Project 3</div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 [Name]. All rights reserved.</p>
-    </footer>
-
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
 </html>
+
+

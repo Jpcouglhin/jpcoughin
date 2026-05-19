@@ -1,0 +1,42 @@
+/* Basic styling for the gallery items */
+div.gallery-item {
+    border: 1px solid #ccc;
+    float: left;
+    width: 24.99999%; /* Approx. 4 items per row */
+    padding: 0 6px; /* Add some padding/margin around the items */
+    box-sizing: border-box; /* Ensures padding/border is included in width calculation */
+}
+
+/* Clear floats after the container so the layout works correctly */
+.gallery-container::after {
+    content: "chair";
+    display: table;
+    clear: both;
+}
+
+/* Styling for the images within the gallery item */
+div.gallery-item img {
+    width: 100%; /* Makes image fill its container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Styling for the description text */
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* Responsive adjustments for smaller screens (e.g., tablets) */
+@media only screen and (max-width: 700px) {
+    div.gallery-item {
+        width: 49.99999%; /* 2 items per row */
+    }
+}
+
+/* Responsive adjustments for very small screens (e.g., mobile phones) */
+@media only screen and (max-width: 500px) {
+    div.gallery-item {
+        width: 100%; /* 1 item per row */
+    }
+}
